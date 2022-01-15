@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="user\main.cpp">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\dllmain.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\helpers.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\il2cpp-init.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\pch-il2cpp.cpp">
+      <Filter>framework</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\kiero.cpp">
+      <Filter>kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\minhook\src\buffer.c">
+      <Filter>kiero\minhook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\minhook\src\hook.c">
+      <Filter>kiero\minhook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\minhook\src\trampoline.c">
+      <Filter>kiero\minhook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="user\cheatstate.cpp">
+      <Filter>user</Filter>
+    </ClCompile>
+    <ClCompile Include="user\Log\cheatlog.cpp">
+      <Filter>user\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="user\Utils\gameutility.cpp">
+      <Filter>user\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="user\Hooks\gamehook.cpp">
+      <Filter>user\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="user\Hooks\graphicshook.cpp">
+      <Filter>user\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\minhook\src\hde\hde32.c">
+      <Filter>kiero\minhook\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="kiero\minhook\src\hde\hde64.c">
+      <Filter>kiero\minhook\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="user\main.h">
+      <Filter>user</Filter>
+    </ClInclude>
+    <ClInclude Include="appdata\il2cpp-api-functions.h">
+      <Filter>appdata</Filter>
+    </ClInclude>
+    <ClInclude Include="appdata\il2cpp-api-functions-ptr.h">
+      <Filter>appdata</Filter>
+    </ClInclude>
+    <ClInclude Include="appdata\il2cpp-functions.h">
+      <Filter>appdata</Filter>
+    </ClInclude>
+    <ClInclude Include="appdata\il2cpp-metadata-version.h">
+      <Filter>appdata</Filter>
+    </ClInclude>
+    <ClInclude Include="appdata\il2cpp-types.h">
+      <Filter>appdata</Filter>
+    </ClInclude>
+    <ClInclude Include="appdata\il2cpp-types-ptr.h">
+      <Filter>appdata</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\helpers.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\il2cpp-appdata.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\il2cpp-init.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\pch-il2cpp.h">
+      <Filter>framework</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\kiero.h">
+      <Filter>kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\include\MinHook.h">
+      <Filter>kiero\minhook\include</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\buffer.h">
+      <Filter>kiero\minhook\src</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\trampoline.h">
+      <Filter>kiero\minhook\src</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx11.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="user\cheatstate.h">
+      <Filter>user</Filter>
+    </ClInclude>
+    <ClInclude Include="user\includes.h">
+      <Filter>user</Filter>
+    </ClInclude>
+    <ClInclude Include="user\Log\cheatlog.h">
+      <Filter>user\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="user\Utils\gameutility.h">
+      <Filter>user\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="user\Utils\magic_enum.hpp">
+      <Filter>user\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="user\Hooks\hooks.h">
+      <Filter>user\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\hde\hde32.h">
+      <Filter>kiero\minhook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\hde\hde64.h">
+      <Filter>kiero\minhook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\hde\pstdint.h">
+      <Filter>kiero\minhook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\hde\table32.h">
+      <Filter>kiero\minhook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="kiero\minhook\src\hde\table64.h">
+      <Filter>kiero\minhook\src\hde</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="appdata">
+      <UniqueIdentifier>{353bd98e-5988-4086-bce9-cda51400ff6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework">
+      <UniqueIdentifier>{3793530b-25e8-4aaa-9064-d1e366d62253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="user">
+      <UniqueIdentifier>{00cc59fc-6057-4170-b2d2-92d9726f1f68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kiero">
+      <UniqueIdentifier>{6c6fc11d-ff3f-40c9-9d0a-72efb22da252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kiero\minhook">
+      <UniqueIdentifier>{f806d090-9cc7-43e9-b888-920578c132c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kiero\minhook\dll_resources">
+      <UniqueIdentifier>{714d82ae-e0ad-48c2-965e-d84ea227f832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kiero\minhook\include">
+      <UniqueIdentifier>{1a95cb6f-0dbb-4007-9952-2a28d6b9cb06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kiero\minhook\src">
+      <UniqueIdentifier>{180fd47a-6389-4bcc-922c-73b7dacb9c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kiero\minhook\src\hde">
+      <UniqueIdentifier>{10042bea-08a4-4e46-a1e5-c0e5ee387e46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{11619dd1-2de5-4d58-92f1-ff07f22ffc42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="user\Log">
+      <UniqueIdentifier>{8eda1a6a-e1d0-42b4-a984-fedcd4f16f1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="user\Utils">
+      <UniqueIdentifier>{b445757a-547d-4f78-aa69-0acb5270f8e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="user\Hooks">
+      <UniqueIdentifier>{55882704-7ff4-418a-a207-e5c13ba7bb5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kiero\minhook\dll_resources\MinHook.def">
+      <Filter>kiero\minhook\dll_resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="kiero\minhook\dll_resources\MinHook.rc">
+      <Filter>kiero\minhook\dll_resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
