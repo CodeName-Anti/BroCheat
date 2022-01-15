@@ -10,6 +10,8 @@ A Cheat for [BroFalls](https://store.steampowered.com/app/1590320/Bro_Falls/).
 This is based on the IL2CPP Inspector C++ Scaffolding.
 Inject it using something like [Xenos](https://github.com/DarthTon/Xenos/releases/download/2.3.2/Xenos_2.3.2.7z).
 
+<img src="Showcase-Image.png" alt="Showcase Image" height="500">
+
 ## Injection
 1. Open [Xenos64.exe](https://github.com/DarthTon/Xenos/releases/download/2.3.2/Xenos_2.3.2.7z).
 2. Drag in the [BroCheat.dll](https://github.com/CodeName-Anti/BroCheat/releases/latest/download/BroCheat.dll).
