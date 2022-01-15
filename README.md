@@ -7,5 +7,14 @@
 
 A Cheat for [BroFalls](https://store.steampowered.com/app/1590320/Bro_Falls/).
 
+Inject it using something like [Xenos](https://github.com/DarthTon/Xenos/releases/download/2.3.2/Xenos_2.3.2.7z).
+
+## Injection
+1. Open [Xenos64.exe](https://github.com/DarthTon/Xenos/releases/download/2.3.2/Xenos_2.3.2.7z).
+2. Drag in the [BroCheat.dll](https://github.com/CodeName-Anti/BroCheat/releases/latest/download/BroCheat.dll).
+3. Start BroFalls and select **Run.exe** in Xenos.
+4. Press inject.
+5. Enjoy.
+
 ## **DISCLAIMER**
 **This software is for testing/educational purposes only. We do not encourage using it when you're not allowed, and will not bear liability for your actions.**
