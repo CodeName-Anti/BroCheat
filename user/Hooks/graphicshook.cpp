@@ -53,7 +53,7 @@ void DrawPlayerActions(PlayerSetup* player)
 
 	if (ImGui::Button("Kill"))
 	{
-		PlayerSetup_KillPlayer(player, KillType__Enum::Hammer, (*Vector3__TypeInfo)->static_fields->zeroVector, 0, nullptr);
+		PlayerSetup_KillPlayer(player, KillType__Enum::TNT, Vector3_Create(0, 69420, 0), 0, nullptr);
 	}
 
 	if (ImGui::Button("Boost away"))
@@ -87,17 +87,6 @@ void DrawMainWindow()
 	if (ImGui::CollapsingHeader("Player"))
 	{
 		ImGui::Checkbox("GodMode", &CheatState::godmode);
-
-		static float x, y, z;
-
-		ImGui::SliderFloat("x", &x, 0, 20);
-		ImGui::SliderFloat("y", &y, 0, 20);
-		ImGui::SliderFloat("z", &z, 0, 20);
-
-		if (ImGui::Button("hit player"))
-		{
-			PlayerSetup_HitPlayer(GetLocalPlayer(), Vector3_Create(x, y, z), Vector3_Create(x, y, z), 1, false, KillType__Enum::Hit, 0, false, false, nullptr);
-		}
 	}
 	
 	if (ImGui::CollapsingHeader("Movement"))
