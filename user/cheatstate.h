@@ -3,7 +3,7 @@
 namespace CheatState
 {
 	extern bool showMenu;
-	extern float rewardMultiplier;
+	extern int rewardMultiplier;
 
 	// Player
 	extern bool godmode;

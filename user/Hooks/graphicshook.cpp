@@ -116,7 +116,7 @@ void DrawMainWindow()
 			{
 				auto player = List_1_PlayerSetup__get_Item(list, i, nullptr);
 
-				if (player->fields.isSpectator)
+				if (player->fields.isSpectator || !player->fields.isAlive)
 					continue;
 
 				if (ImGui::TreeNode(FormatPlayername(player).c_str()))
@@ -148,7 +148,7 @@ void DrawMainWindow()
 				const bool isSelected = (i == currentItem);
 				auto pos = positions[i];
 
-				if (ImGui::Selectable((string("Position ") + std::to_string(i)).c_str(), isSelected))
+				if (ImGui::Selectable(("Position " + std::to_string(i)).c_str(), isSelected))
 					currentItem = i;
 				
 				if(isSelected)
@@ -201,7 +201,7 @@ void DrawMainWindow()
 			}
 		}
 
-		ImGui::SliderFloat("Reward multiplier", &CheatState::rewardMultiplier, 1, 10000000, "%.2f");
+		ImGui::SliderInt("Reward multiplier", &CheatState::rewardMultiplier, 1, 3500000);
 	}
 
 	ImGui::End();

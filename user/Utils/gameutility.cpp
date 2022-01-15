@@ -44,6 +44,8 @@ string FormatPlayername(PlayerSetup* player)
 {
 	string name = il2cppi_to_string(player->fields.clothManager->fields.playerName);
 
+	name = name.substr(0, name.find("|"));
+
 	if (player->fields.isMine)
 		name += "(Self)";
 

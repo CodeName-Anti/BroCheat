@@ -3,7 +3,7 @@
 namespace CheatState
 {
 	bool showMenu;
-	float rewardMultiplier = 1;
+	int rewardMultiplier = 1;
 
 	// Player
 	bool godmode;
