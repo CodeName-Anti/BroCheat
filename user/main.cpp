@@ -13,11 +13,33 @@
 #include <Hooks/hooks.h>
 #include <thread>
 #include <chrono>
+#include <fstream>
+#include <iostream>
 
 using namespace app;
 
 // LogFile Name
 extern const LPCWSTR LOG_FILE = L"BroCheat.log";
+
+BOOL WINAPI ConsoleHandlerRoutine(DWORD dwCtrlType)
+{
+	switch (dwCtrlType)
+	{
+	case CTRL_C_EVENT:
+		CheatLog::Log(CheatLog::LogLevel::Info, "There's no Escape...", false, true);
+		return TRUE;
+
+	case CTRL_CLOSE_EVENT:
+		exit(0);
+		return TRUE;
+
+	case CTRL_SHUTDOWN_EVENT:
+		exit(0);
+		return TRUE;
+	}
+
+	return FALSE;
+}
 
 // Custom injected code entry point
 DWORD WINAPI MainThread()
@@ -25,8 +47,14 @@ DWORD WINAPI MainThread()
     // Initialize thread data - DO NOT REMOVE
     il2cpp_thread_attach(il2cpp_domain_get());
 
+	std::ofstream ofs;
+	ofs.open(LOG_FILE, std::ofstream::out | std::ofstream::trunc);
+	ofs.close();
+
     // Open Console and redirect stdout
 	il2cppi_new_console();
+
+	SetConsoleCtrlHandler(ConsoleHandlerRoutine, TRUE);
 
 	DisableAntiCheat();
 

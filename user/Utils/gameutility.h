@@ -4,8 +4,10 @@
 void DisableAntiCheat();
 
 app::PlayerSetup* GetLocalPlayer();
+
 bool WasPressedThisFrame(app::KeyControl* key);
 bool IsPressed(app::KeyControl* key);
+
 std::string FormatPlayername(app::PlayerSetup* player);
 
 // Vector3

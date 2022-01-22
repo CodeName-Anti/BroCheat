@@ -33,7 +33,9 @@ void il2cppi_log_write(std::string text) {
 // Helper function to open a new console window and redirect stdout there
 void il2cppi_new_console() {
     AllocConsole();
+    freopen_s((FILE**) stdin, "CONIN$", "r", stdin);
     freopen_s((FILE**) stdout, "CONOUT$", "w", stdout);
+    freopen_s((FILE**) stderr, "CONOUT$", "w", stderr);
 }
 
 #if _MSC_VER >= 1920

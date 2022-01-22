@@ -8,7 +8,6 @@
 
 using namespace app;
 
-//typedef void (*DAMAGEPLAYER)(PlayerStatus*, int32_t, Vector3, uint64_t, int32_t, MethodInfo*);
 typedef bool (*ISPURCHASED)(String*, MethodInfo*);
 typedef int (*GETPURCHASE)(String*, MethodInfo*);
 typedef void (*KILLPLAYER)(PlayerSetup*, KillType__Enum, Vector3, Transform*, MethodInfo*);
@@ -16,9 +15,8 @@ typedef void (*UPDATE)(PlayerSetup*, MethodInfo*);
 typedef void (*FIXEDUPDATE)(PlayerSetup*, MethodInfo*);
 typedef void (*ADDMONEY)(int32_t, float, bool, MethodInfo*);
 typedef void (*ADDXP)(int32_t, float, MethodInfo*);
-typedef void (*ADDCROWNS)(int, float, bool);
+typedef void (*ADDCROWNS)(int, float, bool, MethodInfo*);
 
-//DAMAGEPLAYER oDamagePlayer;
 ISPURCHASED oIsPurchased;
 GETPURCHASE oGetPurchase;
 KILLPLAYER oKillPlayer;
@@ -30,7 +28,7 @@ ADDCROWNS oAddCrowns;
 
 void hk_MoneyPanelScript_AddCrowns(int32_t _add, float delay, MethodInfo* method)
 {
-	oAddXp((int)((_add + 0.5 - (_add < 0)) * CheatState::rewardMultiplier), delay, method);
+	oAddCrowns((int)((_add + 0.5 - (_add < 0)) * CheatState::rewardMultiplier), delay, true, method);
 }
 
 void hk_MoneyPanelScript_AddXp(int32_t _add, float delay, MethodInfo* method)
@@ -70,6 +68,11 @@ void hk_PlayerSetup_FixedUpdate(PlayerSetup* __this, MethodInfo* method)
 			}
 		}
 		#pragma endregion
+
+		if (CheatState::noRagdoll)
+		{
+			PlayerSetup_RagdollOff(__this, nullptr);
+		}
 	}
 
 	oFixedUpdate(__this, method);

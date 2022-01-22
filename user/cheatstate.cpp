@@ -7,6 +7,7 @@ namespace CheatState
 
 	// Player
 	bool godmode;
+	bool noRagdoll;
 
 	// Movement
 	bool speed;

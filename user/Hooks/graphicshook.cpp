@@ -87,6 +87,7 @@ void DrawMainWindow()
 	if (ImGui::CollapsingHeader("Player"))
 	{
 		ImGui::Checkbox("GodMode", &CheatState::godmode);
+		ImGui::Checkbox("No Ragdoll", &CheatState::noRagdoll);
 	}
 	
 	if (ImGui::CollapsingHeader("Movement"))
