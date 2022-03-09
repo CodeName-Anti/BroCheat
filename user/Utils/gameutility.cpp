@@ -20,7 +20,7 @@ void DisableAntiCheat()
 
 app::PlayerSetup* GetLocalPlayer()
 {
-	auto networkManager = (*NetworkManager__TypeInfo)->static_fields->instance;
+	NetworkManager* networkManager = (*NetworkManager__TypeInfo)->static_fields->instance;
 
 	if (networkManager != nullptr)
 	{

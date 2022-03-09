@@ -40,7 +40,8 @@ ID3D11RenderTargetView* mainRenderTargetView;
 
 void DrawPlayerActions(PlayerSetup* player)
 {
-	auto localPlayer = GetLocalPlayer();
+	PlayerSetup *localPlayer = GetLocalPlayer();
+
 	if (ImGui::Button("Teleport to player"))
 	{
 		if (localPlayer != nullptr && localPlayer->fields.isAlive && !localPlayer->fields.isSpectator && !localPlayer->fields.finished)

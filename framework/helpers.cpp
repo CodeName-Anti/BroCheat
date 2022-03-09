@@ -9,6 +9,8 @@
 #include <codecvt>
 #include "helpers.h"
 
+#pragma warning (disable:4996)
+
 // Log file location
 extern const LPCWSTR LOG_FILE;
 
